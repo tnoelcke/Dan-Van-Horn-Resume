@@ -1,11 +1,5 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
-
+\usepackage[utf8]{inputenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -15,7 +9,6 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -73,62 +66,15 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://danvanhorn.github.io./}{\Large Daniel Van Horn}} & Email : \href{mailto:vanhornd@oregonstate.edu}{vanhornd@oregonstate.edu}\\
+  \textbf{\href{http://danvanhorn.github.io./}{\Large Daniel Van Horn}} & Email : \href{mailto:vanhornd@oregonstate.edu}{vanhornd@oregonstate.edu}
+  \\
   \href{http://danvanhorn.github.io/}{https://danvanhorn.github.io} & Mobile : 971-237-4103 \\
+  1813 SW 49th St. Corvallis OR, 97333 &
 \end{tabular*}
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Center For Applied Systems and Software}{Corvallis, OR}
-      {Software Engineer}{May 2016 - Present}
-      \resumeItemListStart
-        \resumeItem{Smarter Balanced}
-          {Suite of scalable, open source .NET core and Node microservice and web applications with a shared component library in React and Typescript for the Smarter Balanced Assessment Consortium, serving 4700 state agencies, teachers, parents and students. Minimized repeated code and allowed for thorough automated testing and continuous integration. Singlehandedly increased code coverage from 0 to 80\%.}
-        \resumeItem{Oregon Department of Transportation}
-          {Worked in a team to develop and maintain RESTful web services, MVC web applications in C\#, interconnected SQL databases, and desktop applications. The applications we created dynamically rendered and allowed users to edit data-driven graphics and live events from the entire state of Oregon.}
-        \resumeItem{Responsibilities}
-        {Adept at rapidly changing project specifications, synthesizing new technologies, and working on AGILE teams.} 
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {CDK Global}{Portland, OR}
-      {Software Engineer Intern}{June 2017 - September 2017}
-      \resumeItemListStart
-        \resumeItem{Customer Search Interface}
-          {Designed and implemented a modern user interface in ReactJs for a search search interface. Instituted a workflow for developers to follow; automated testing, building, and publishing to NPM.}
-        \resumeItem{Cloud Search}
-          {Member of winning team in the 2017 CDK Global Hackathon. Created a cloud service in .NET core hosted in AWS for indexing the entire customer database. Increased search speeds by a factor of fifty which was estimated to save the company over \$8 million a year in computation time.}
-        \resumeItem{Responsibilities}{Exceeded expectations in a rapid SCRUM environment, and held weekly project showcases with upper management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {OSU School of Electrical Engineering and Computer Science}{Corvallis, OR}
-      {Teaching Assistant}{October 2016 - June 2017}
-      \resumeItemListStart
-        \resumeItem{Recitations}{Taught students foundational skills in UNIX, Python, C++ and object oriented programming during weekly lecture sessions.}
-        \resumeItem{Laboratories}{Provided tutoring services regarding design, programming and debugging issues students face both in face-to-face and remote sessions.}
-        \resumeItem{Team collaboration}{Collaborated with faculty to develop new curriculum and assignments.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-  
-  %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-     \textbf{Languages}{: \textbf{C#, C++, C, JavaScript, HTML, CSS,} LESS, JSON, SQL, MySql, Python, Java, XML, YAML}}
-     \item{
-      \textbf{Technologies}{: \textbf{Node, React, Typescript, NPM, Redux, Flux, Webpack,} Babel, JQuery, Bootstrap, Razor, XSLT}
-    }
-  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -141,13 +87,64 @@
       {Associate of Arts;  GPA: 3.26}{Aug. 2013 -- July. 2015}
   \resumeSubHeadingListEnd
 
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+    {C\#, C++, C, JS, HTML, CSS, Python, .NET Core, Java, LESS, JSON, SQL, MySql, XML, YAML}
+    \resumeSubItem{Technologies}
+    {Node, React, Typescript, NPM, Redux, Flux, Webpack, Babel, JQuery, Bootstrap, Razor, XSLT}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Center For Applied Systems and Software}{Corvallis, OR}
+      {Software Engineer}{May 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Smarter Balanced}
+          {Suite of scalable, open source .NET core and Node microservice and web applications with a shared component library in React and Typescript for the Smarter Balanced Assessment Consortium, serving 4700 state agencies, teachers, parents and students. Minimized repeated code and allowed for thorough automated testing, continuous integration and deployment using Docker and AWS. Singlehandedly increased code coverage from 0 to 80\%.}
+        \resumeItem{Oregon Department of Transportation}
+          {Worked in a team to develop and maintain RESTful web services, MVC web applications in C\#, interconnected SQL databases, and desktop applications. The applications we created allowed users to edit and dynamically render data-driven graphics and live events from the entire state of Oregon.}
+        \resumeItem{Responsibilities}
+        {Adapt to rapidly changing project specifications and synthesize new technologies. Attend weekly sprint planning, daily standups, and excel in an AGILE team environment.} 
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CDK Global}{Portland, OR}
+      {Software Engineer Intern}{June 2017 - September 2017}
+      \resumeItemListStart
+        \resumeItem{Customer Search Interface}
+          {Designed and implemented a responsive, mobile-first user interface in ReactJs for a search system. Instituted a workflow for developers to follow; automated testing, building, and publishing to NPM. Test driven development resulted in}
+        \resumeItem{Cloud Search}
+          {Member of winning team in the 2017 CDK Global Hackathon. Created a cloud service in .NET core hosted in AWS for indexing the entire customer database. Increased search speeds by a factor of fifty which was estimated to save the company over \$8 million a year in computation time.}
+        \resumeItem{Responsibilities}{Exceeded expectations in a rapid SCRUM environment; held daily standup meetings and weekly project showcases with upper management.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OSU School of Electrical Engineering and Computer Science}{Corvallis, OR}
+      {Teaching Assistant}{October 2016 - July 2017}
+      \resumeItemListStart
+        \resumeItem{Recitations}{Taught students foundational skills in UNIX, Python, C++ and object oriented programming during weekly lecture sessions.}
+        \resumeItem{Laboratories}{Provided tutoring services regarding design, programming and debugging issues students face both in face-to-face and remote sessions.}
+        \resumeItem{Team Collaboration}{Worked in conjunction with faculty to develop new curriculum and assignments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{SB-Components}
-      {A shared component library in React Js and Typescript, tested and published to NPM using TravisCI.}
+      {A shared component UI library in React and Typescript, tested and published to NPM using Travis CI.}
     \resumeSubItem{AP Score Guide}
-      {Standardized testing application built to query, sort and generate pdf files based on test items.}
+      {Node application with React front end for Teachers, built to query, sort and generate pdf files based on student's test scores.}
   \resumeSubHeadingListEnd
 
 \end{document}

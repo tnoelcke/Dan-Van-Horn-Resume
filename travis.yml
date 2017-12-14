@@ -1,12 +1,18 @@
+sudo: required
+dist: trusty
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 script:
 - mkdir _build
-- pdflatex -output-directory _build dvh-resume.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/your_file_1.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/your_file_2.tex
 deploy:
   provider: releases
+  api_key:
+    secure: [YOUR KEY]
   file:
-  - _build/dvh-resume.pdf
+  - _build/your_file_1.pdf
+  - _build/your_file_2.pdf
   skip_cleanup: true
   on:
     tags: true
