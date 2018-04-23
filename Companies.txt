@@ -9,4 +9,7 @@ CSKY - Various Positions - Eugene.
 Droplr - Various Positions -Eugene.
 emberex - QA - We Development - Eugene
 five talent - Software Developer QA Engineer - Bend
+G5 - Software Engineer - Test Engineer - Bend
+Gillis Software - Systems Engineer - Eugene
+
 
